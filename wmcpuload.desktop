@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=WMCPULoad
+Comment=CPU load monitor
+Comment[pl]=Monitor obci±¿enia procesora
+Exec=wmcpuload
+Terminal=0
+Type=Application
