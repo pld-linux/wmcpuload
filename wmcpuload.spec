@@ -1,7 +1,7 @@
 Summary:	Window Maker dock applet that displays current cpuload
 Summary(pl):	Monitor obci±¿enia procesora dla Window Makera
 Name:		wmcpuload
-Version:	1.0.0
+Version:	1.0.1
 Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
