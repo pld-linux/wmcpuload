@@ -31,6 +31,7 @@ Afterstep czy Blackbox.
 
 %build
 ln -s ../libdockapp src
+ln -s ../libdockapp/dockapp.o src/
 rm -f missing
 %{__aclocal}
 %{__autoconf}
@@ -44,7 +45,7 @@ install -d $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-#install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -54,4 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README ChangeLog AUTHORS NEWS THANKS TODO
 %attr(755,root,root) %{_bindir}/wmcpuload
 %{_mandir}/man1/wmcpuload.1*
-#%%{_applnkdir}/DockApplets/WMCPULoad.desktop
+%{_applnkdir}/DockApplets/*
