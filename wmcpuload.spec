@@ -9,7 +9,7 @@ Source0:	http://www.sh.rim.or.jp/~ssato/src/%{name}-%{version}.tar.gz
 # Source0-md5:	93a28a62d31d4b283edd78fffafb0835
 Source1:	%{name}.desktop
 Patch0:		%{name}-makefile.patch
-URL:		http://www.sh.rim.or.jp/~ssato/wmcpuload-e.html
+URL:		http://www.sh.rim.or.jp/~ssato/dockapp/
 BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
