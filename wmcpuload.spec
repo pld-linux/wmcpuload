@@ -2,7 +2,7 @@ Summary:	Window Maker dock applet that displays current cpuload
 Summary(pl):	Monitor obci±¿enia procesora dla Window Makera
 Name:		wmcpuload
 Version:	1.0.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://www.sh.rim.or.jp/~ssato/src/%{name}-%{version}.tar.gz
@@ -41,11 +41,11 @@ rm -f missing
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
+install -d $RPM_BUILD_ROOT%{_desktopdir}/docklets
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/docklets
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -55,4 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README ChangeLog AUTHORS NEWS THANKS TODO
 %attr(755,root,root) %{_bindir}/wmcpuload
 %{_mandir}/man1/wmcpuload.1*
-%{_applnkdir}/DockApplets/*
+%{_desktopdir}/docklets/*
