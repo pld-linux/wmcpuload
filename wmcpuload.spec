@@ -1,4 +1,4 @@
-# $Revision: 1.3 $ $Date: 2001-10-10 14:09:18 $
+# $Revision: 1.4 $ $Date: 2002-01-18 02:12:14 $
 Summary:	Window Maker dock applet that displays current cpuload
 Summary(pl):	Monitor obci±¿enia procesora dla Window Makera
 Name:		WMCPULoad
