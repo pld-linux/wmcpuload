@@ -1,4 +1,4 @@
-# $Revision: 1.1 $ $Date: 2001-09-23 07:58:56 $
+# $Revision: 1.2 $ $Date: 2001-09-24 16:47:17 $
 Summary:	Window Maker dock applet that displays current cpuload
 Summary(pl):	Monitor obci±¿enia procesora dla Window Makera
 Name:		WMCPULoad
@@ -13,7 +13,6 @@ Source1:	%{name}.desktop
 URL:		http://www.sh.rim.or.jp/~ssato/wmcpuload-e.html
 BuildPrereq:	autoconf
 BuildPrereq:	automake
-BuildPrereq:	libdockapp-devel
 BuildPrereq:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -40,10 +39,11 @@ automake -a -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-%{__install} %{SOURCE1}	$RPM_BUILD_ROOT%{_applnkdir}/DockApplets
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 gzip -9nf README ChangeLog AUTHORS NEWS THANKS TODO
 
