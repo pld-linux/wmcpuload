@@ -1,4 +1,4 @@
-# $Revision: 1.5 $ $Date: 2002-02-22 23:28:38 $
+# $Revision: 1.6 $ $Date: 2002-03-24 23:28:13 $
 Summary:	Window Maker dock applet that displays current cpuload
 Summary(pl):	Monitor obci±¿enia procesora dla Window Makera
 Name:		WMCPULoad
@@ -31,7 +31,7 @@ Afterstep czy Blackbox.
 %build
 aclocal
 autoconf
-automake -a -c
+automake -a -c -f
 %configure 
 %{__make}
 
