@@ -13,8 +13,6 @@ BuildRequires:	automake
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 WMCPULoad is a dockapp to monitor cpu load for Window Maker. It works
