@@ -51,4 +51,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README ChangeLog AUTHORS NEWS THANKS TODO
 %attr(755,root,root) %{_bindir}/wmcpuload
 %{_mandir}/man1/wmcpuload.1*
-#%{_applnkdir}/DockApplets/WMCPULoad.desktop
+#%%{_applnkdir}/DockApplets/WMCPULoad.desktop
