@@ -1,4 +1,4 @@
-# $Revision: 1.4 $ $Date: 2002-01-18 02:12:14 $
+# $Revision: 1.5 $ $Date: 2002-02-22 23:28:38 $
 Summary:	Window Maker dock applet that displays current cpuload
 Summary(pl):	Monitor obci±¿enia procesora dla Window Makera
 Name:		WMCPULoad
@@ -6,8 +6,6 @@ Version:	0.6.0
 Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
-Group(de):	X11/Fenstermanager/Werkzeuge
-Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	http://www.sh.rim.or.jp/~ssato/src/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 URL:		http://www.sh.rim.or.jp/~ssato/wmcpuload-e.html
