@@ -1,0 +1,12 @@
+diff -urN wmcpuload-1.0.1-orig/src/Makefile.am wmcpuload-1.0.1/src/Makefile.am
+--- wmcpuload-1.0.1-orig/src/Makefile.am	2002-10-14 11:31:17.000000000 +0200
++++ wmcpuload-1.0.1/src/Makefile.am	2003-09-18 03:29:07.703801704 +0200
+@@ -30,7 +30,7 @@
+ CFLAGS = @DFLAGS@ @CFLAGS@ -I../libdockapp/
+ 
+ wmcpuload_LDADD = \
+-	dockapp.o \
++	../libdockapp/dockapp.o \
+ 	@LIBRARY_SEARCH_PATH@ \
+ 	@XLIBS@ \
+ 	@XLFLAGS@
