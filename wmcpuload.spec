@@ -1,12 +1,11 @@
-# $Revision: 1.7 $ $Date: 2002-05-21 23:12:39 $
 Summary:	Window Maker dock applet that displays current cpuload
 Summary(pl):	Monitor obci±¿enia procesora dla Window Makera
 Name:		WMCPULoad
-Version:	0.6.0
+Version:	1.0.0
 Release:	1
 License:	GPL
 Group:		X11/Window Managers/Tools
-Source0:	http://www.sh.rim.or.jp/~ssato/src/%{name}-%{version}.tar.gz
+Source0:	http://www.sh.rim.or.jp/~ssato/src/wmcpuload-%{version}.tar.gz
 Source1:	%{name}.desktop
 URL:		http://www.sh.rim.or.jp/~ssato/wmcpuload-e.html
 BuildRequires:	autoconf
@@ -26,9 +25,10 @@ Window Makera. Mo¿na go u¿ywaæ z innymi zarz±dcami okien, takimi jak
 Afterstep czy Blackbox.
 
 %prep
-%setup  -q
+%setup -q -n wmcpuload-%{version}
 
 %build
+ln -s ../libdockapp src
 aclocal
 %{__autoconf}
 %{__automake}
