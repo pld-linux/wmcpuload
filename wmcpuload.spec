@@ -8,11 +8,11 @@ Group:		X11/Window Managers/Tools
 Source0:	http://www.sh.rim.or.jp/~ssato/src/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 URL:		http://www.sh.rim.or.jp/~ssato/wmcpuload-e.html
+BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	XFree86-devel
+Obsoletes:	WMCPULoad
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 WMCPULoad is a dockapp to monitor cpu load for Window Maker. It works
@@ -24,7 +24,7 @@ Window Makera. Mo¿na go u¿ywaæ z innymi zarz±dcami okien, takimi jak
 Afterstep czy Blackbox.
 
 %prep
-%setup -q -n wmcpuload-%{version}
+%setup -q
 
 %build
 ln -s ../libdockapp src
