@@ -5,11 +5,12 @@ Version:	1.0.1
 Release:	2
 License:	GPL
 Group:		X11/Window Managers/Tools
-Source0:	http://www.sh.rim.or.jp/~ssato/src/%{name}-%{version}.tar.gz
+#Source0Download: http://seiichisato.jp/dockapps/
+Source0:	http://seiichisato.jp/dockapps/src/%{name}-%{version}.tar.gz
 # Source0-md5:	93a28a62d31d4b283edd78fffafb0835
 Source1:	%{name}.desktop
 Patch0:		%{name}-makefile.patch
-URL:		http://www.sh.rim.or.jp/~ssato/dockapp/
+URL:		http://seiichisato.jp/dockapps/
 BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -32,7 +33,6 @@ Afterstep czy Blackbox.
 %build
 ln -s ../libdockapp src
 ln -s ../libdockapp/dockapp.o src/
-rm -f missing
 %{__aclocal}
 %{__autoconf}
 %{__automake}
@@ -43,7 +43,8 @@ rm -f missing
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_desktopdir}/docklets
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/docklets
 
