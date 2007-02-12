@@ -1,5 +1,5 @@
 Summary:	Window Maker dock applet that displays current cpuload
-Summary(pl):	Monitor obci±¿enia procesora dla Window Makera
+Summary(pl.UTF-8):   Monitor obciÄ…Å¼enia procesora dla Window Makera
 Name:		wmcpuload
 Version:	1.0.1
 Release:	2
@@ -21,9 +21,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 WMCPULoad is a dockapp to monitor cpu load for Window Maker. It works
 fine with AfterStep and BlackBox.
 
-%description -l pl
-WMCPULoad do dokowalny graficzny monitor obci±¿enia procesora dla
-Window Makera. Mo¿na go u¿ywaæ z innymi zarz±dcami okien, takimi jak
+%description -l pl.UTF-8
+WMCPULoad do dokowalny graficzny monitor obciÄ…Å¼enia procesora dla
+Window Makera. MoÅ¼na go uÅ¼ywaÄ‡ z innymi zarzÄ…dcami okien, takimi jak
 Afterstep czy Blackbox.
 
 %prep
