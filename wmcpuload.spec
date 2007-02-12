@@ -1,5 +1,5 @@
 Summary:	Window Maker dock applet that displays current cpuload
-Summary(pl.UTF-8):   Monitor obciążenia procesora dla Window Makera
+Summary(pl.UTF-8):	Monitor obciążenia procesora dla Window Makera
 Name:		wmcpuload
 Version:	1.0.1
 Release:	2
