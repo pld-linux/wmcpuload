@@ -5,7 +5,6 @@ Comment[pl]=Monitor obciążenia procesora
 Exec=wmcpuload
 Terminal=false
 Type=Application
-Encoding=UTF-8
 NotShowIn=GNOME;KDE;
 Categories=Applet;
 # vi: encoding=utf-8
