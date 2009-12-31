@@ -2,7 +2,7 @@ Summary:	Window Maker dock applet that displays current cpuload
 Summary(pl.UTF-8):	Monitor obciążenia procesora dla Window Makera
 Name:		wmcpuload
 Version:	1.0.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Window Managers/Tools
 #Source0Download: http://seiichisato.jp/dockapps/
@@ -11,9 +11,10 @@ Source0:	http://seiichisato.jp/dockapps/src/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Patch0:		%{name}-makefile.patch
 URL:		http://seiichisato.jp/dockapps/
-BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	xorg-lib-libXext-devel
+BuildRequires:	xorg-lib-libXpm-devel
 Obsoletes:	WMCPULoad
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
